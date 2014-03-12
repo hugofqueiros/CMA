@@ -1,0 +1,43 @@
+<SGAI>
+	<agente id="AG01">
+		<nome>Pedro Sousa</nome>
+	</agente>
+
+	<agente id="AG02">
+		<nome>Ana Silva</nome>
+	</agente>
+
+	<apartamento id="AP001">
+		<morada>
+			<rua>Rua S. Paulo, 22</rua>
+			<localidade>Porto</localidade>
+		</morada>
+		<quartos>2</quartos>
+		<preco>85000</preco>
+		<agente-responsavel>AG01</agente-responsavel>
+		<distancia-em-minutos>15</distancia-em-minutos>
+	</apartamento>
+
+	<moradia id="MD002">
+		<morada>
+			<rua>Avenida S. Pedro, 55</rua>
+			<localidade>Matosinhos</localidade>
+		</morada>
+		<quartos>5</quartos>
+		<frentes>3</frentes>
+		<preco>175000</preco>
+		<agente-responsavel>AG01</agente-responsavel>
+		<distancia-em-minutos>35</distancia-em-minutos>
+	</moradia>
+
+	<espaco-comercial id="EC003">
+		<morada>
+			<rua>Rua S. Paulo, 1105</rua>
+			<localidade>Porto</localidade>
+		</morada>
+		<area-bruta>150</area-bruta>
+		<preco>40000</preco>
+		<agente-responsavel>AG02</agente-responsavel>
+		<distancia-em-minutos>20</distancia-em-minutos>
+	</espaco-comercial>
+</SGAI>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SGAI">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="agente" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nome"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="apartamento">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="morada">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="rua"/>
+                    <xs:element type="xs:string" name="localidade"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:byte" name="quartos"/>
+              <xs:element type="xs:int" name="preco"/>
+              <xs:element type="xs:string" name="agente-responsavel"/>
+              <xs:element type="xs:byte" name="distancia-em-minutos"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="moradia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="morada">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="rua"/>
+                    <xs:element type="xs:string" name="localidade"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:byte" name="quartos"/>
+              <xs:element type="xs:byte" name="frentes"/>
+              <xs:element type="xs:int" name="preco"/>
+              <xs:element type="xs:string" name="agente-responsavel"/>
+              <xs:element type="xs:byte" name="distancia-em-minutos"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="espaco-comercial">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="morada">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="rua"/>
+                    <xs:element type="xs:string" name="localidade"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="area-bruta"/>
+              <xs:element type="xs:int" name="preco"/>
+              <xs:element type="xs:string" name="agente-responsavel"/>
+              <xs:element type="xs:byte" name="distancia-em-minutos"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
